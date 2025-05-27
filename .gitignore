@@ -2,3 +2,6 @@ data/fineweb10B/
 pylog124M/
 logs/
 wandb/
+
+# Pyenv local version file
+.python-version

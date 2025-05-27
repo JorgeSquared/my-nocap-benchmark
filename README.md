@@ -1,3 +1,11 @@
+# My GPT-2 Benchmark Journey (Adapted for Colab)
+
+This repository is my personal working copy of the [BottleCapAI GPT-2 Benchmark](https://github.com/BottleCapAI/NoCap-Test). It includes modifications and notes primarily focused on setting up and running experiments within a Google Colab environment.
+
+For the original challenge details, please refer to the information below.
+
+---
+
 # GPT-2 Benchmark
 
 ![logo](img/logo.png)
@@ -69,7 +77,7 @@ python data/cached_fineweb10B.py
 
 ## Benchmarks
 
-Here’s the current leaderboard. If the baseline improves, we’ll update it here for reference.
+Here's the current leaderboard. If the baseline improves, we'll update it here for reference.
 
 **Train a neural network to ≤ 3.3821 validation loss on FineWeb using 1 GPU.**
 
