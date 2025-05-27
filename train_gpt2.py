@@ -450,9 +450,9 @@ if __name__ == "__main__":
     if hasattr(config, "coordinate_descent_tuning"):
         config.coordinate_descent_tuning = True  # suggested by @Chillee
     print0("compiling the model...")
-    model = torch.compile(
-        model
-    )  # NOTE: this might cause issues depending on your GPU, consider turning it off
+    # model = torch.compile(
+    #     model
+    # )  # NOTE: this might cause issues depending on your GPU, consider turning it off
 
     # here we wrap model into DDP container
     model = DDP(model, device_ids=[ddp_local_rank])
