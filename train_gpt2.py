@@ -421,7 +421,7 @@ if __name__ == "__main__":
     print0(f"tokens per iteration: {tokens_per_iter:,}")
 
     # set up a context manager following the desired dtype and device
-    ctx = torch.amp.autocast(device_type="cuda", dtype=torch.bfloat16)
+    ctx = torch.amp.autocast(device_type="cuda", dtype=torch.float16)
 
     # load tokens
     train_loader = DistributedDataLoader(args.input_bin, B, T, ddp_rank, ddp_world_size)
